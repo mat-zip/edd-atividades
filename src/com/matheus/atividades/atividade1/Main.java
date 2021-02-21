@@ -14,9 +14,13 @@ public class Main {
 //        Triangulo t = new Triangulo(5,5,5);
 //        System.out.println(t.classificacao());
 
-        NaturalTriangular n = new NaturalTriangular();
-        System.out.println(n.isTriangular(120));
+//        NaturalTriangular n = new NaturalTriangular();
+//        System.out.println(n.isTriangular(120));
 
-
+        Dado d = new Dado();
+        d.lancarDado(5);
+        System.out.println(d.imprimir());
+        System.out.println(d.maior());
+        System.out.println(d.menor());
     }
 }
