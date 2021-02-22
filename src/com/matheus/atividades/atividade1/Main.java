@@ -17,10 +17,11 @@ public class Main {
 //        NaturalTriangular n = new NaturalTriangular();
 //        System.out.println(n.isTriangular(120));
 
-        Dado d = new Dado();
-        d.lancarDado(5);
-        System.out.println(d.imprimir());
-        System.out.println(d.maior());
-        System.out.println(d.menor());
+//        Dado d = new Dado();
+//        d.lancarDado(5);
+//        System.out.println(d.imprimir());
+//        d.ocorrencias();
+//        System.out.println(d.maior());
+//        System.out.println(d.menor());
     }
 }
