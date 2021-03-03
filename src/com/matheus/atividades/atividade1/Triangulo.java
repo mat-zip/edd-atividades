@@ -4,7 +4,6 @@ public class Triangulo {
     private int ladoA,ladoB, ladoC;
 
 
-
     public Triangulo(int ladoA, int ladoB, int ladoC) {
         this.ladoA = ladoA;
         this.ladoB = ladoB;

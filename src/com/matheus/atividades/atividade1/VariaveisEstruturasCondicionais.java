@@ -3,12 +3,13 @@ package com.matheus.atividades.atividade1;
 public class VariaveisEstruturasCondicionais {
 
     public VariaveisEstruturasCondicionais() {
+
     }
 
     public String ordenarCrescente(int a, int b, int c) {
         int aux;
         // a = 5 b = 4 c = 3
-        // a = 3 b = 4 c = 5;
+        // a = 3 b = 4 c = 5
 
         // a = 4 b = 5 c = 3 aux = 4
         // a = 3 b = 4 c = 5

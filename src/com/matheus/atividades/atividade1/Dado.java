@@ -53,17 +53,22 @@ public class Dado {
 
     public int maior() {
         int maior = 0;
+
         for(int i = 0; i < res.length; i++) {
+
             if(res[i] > maior) {
                 maior = res[i];
             }
+
         }
         return maior;
     }
 
     public int menor() {
         int menor = 999;
+
         for(int i = 0; i < res.length; i++) {
+
             if(res[i] < menor) {
                 menor = res[i];
             }
