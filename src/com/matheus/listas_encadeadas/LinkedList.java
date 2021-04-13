@@ -1,6 +1,4 @@
-package listas_encadeadas;
-
-import exemplo.LinkedListExample;
+package com.matheus.listas_encadeadas;
 
 public class LinkedList implements List{
 
@@ -25,6 +23,8 @@ public class LinkedList implements List{
 
     @Override
     public void removeCabeca() {
+        //-- Carro -> Avião -> Moto
+
         cabeca = cabeca.next;
     }
 

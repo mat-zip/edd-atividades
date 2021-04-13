@@ -1,4 +1,4 @@
-package listas_encadeadas;
+package com.matheus.listas_encadeadas;
 
 public interface List {
 
@@ -24,5 +24,5 @@ public interface List {
     void excluirLista();
 
     //08 - Verificar se a lista está vazia
-    public boolean estaVazia();
+    boolean estaVazia();
 }

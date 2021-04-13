@@ -1,4 +1,4 @@
-package listas_encadeadas;
+package com.matheus.listas_encadeadas;
 
 public class Main {
     public static void main(String[] args) {
