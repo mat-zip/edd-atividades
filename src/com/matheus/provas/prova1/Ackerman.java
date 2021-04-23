@@ -25,24 +25,24 @@ public class Ackerman {
 
     public Integer ackermanNaoRecursiva(int m, int n) {
         //Cria uma pilha para adicionar elementos
-        Pilha s = new Pilha();
+        Pilha pilha = new Pilha();
 
         //Adiciona o m na pilha
-        s.push(m);
+        pilha.push(m);
 
-        while(!s.estaVazia()){  //Verifica se a pilha não está vazia
+        while(!pilha.estaVazia()){  //Verifica se a pilha não está vazia
             //Remove o último elemento da pilha e o adiciona na variavel "m"
-            m= s.pop();
+            m= pilha.pop();
 
             //Se algum parâmetro for "0" coloque adicone "m+1" em "n"
             if(m==0||n==0)
                 n+=m+1;
             else{
                 //Adicione m-1 na pilha
-                s.push(--m);
+                pilha.push(--m);
 
                 //Adicione m+1 na pilha
-                s.push(++m);
+                pilha.push(++m);
 
                 //Retire 1 de "n"
                 n--;

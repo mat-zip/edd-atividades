@@ -9,12 +9,9 @@ public class DoublyLink {
     	this.data = data; 
     	prev = null;
     	next = null;
-
     }
     @Override
     public String toString() {
         return data.toString();
     }
-
-
 }

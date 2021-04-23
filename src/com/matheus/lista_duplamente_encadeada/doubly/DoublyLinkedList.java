@@ -9,7 +9,7 @@ public class DoublyLinkedList {
     	tail = null;
     }
     
-  public void insertTail(String elem){ 
+  public void insertHead(String elem){
 	  DoublyLink link = new DoublyLink(elem);
       if(head == null){
           head = link;
@@ -22,17 +22,7 @@ public class DoublyLinkedList {
           } 
           aux.next  = link;
           link.prev = aux;
-      }
-    }
-  public void insertHead(String elem){ 
-      if(head == null){
-          head = new DoublyLink(elem);
-      }
-      else
-      {
-    	  DoublyLink aux = new DoublyLink(elem);
-    	  aux.next = head;
-          head = aux;
+
       }
     }
   
@@ -63,4 +53,5 @@ public class DoublyLinkedList {
         	if (elem == aux.data) 
         		aux.data = newElem;         
       }
+
 }
