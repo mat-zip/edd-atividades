@@ -5,6 +5,10 @@ public class DoublyLink {
     public DoublyLink next;
     public Pessoa data;
 
+    public  DoublyLink() {
+
+    }
+
     public DoublyLink (Pessoa data){
         this.data = data;
         prev = null;
