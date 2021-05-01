@@ -21,27 +21,36 @@ public class Busca {
     }
 
     public boolean buscaBinaria(int[] vetor, int elemento) {
-        int vetorMetade;
+        int inicio = 0;
+        int fim = vetor.length -1;
+        int meio;
+        boolean encontrado = false;
+
         if (vetor.length % 2 == 0) {
-            vetorMetade = vetor.length / 2;
+            meio = vetor.length / 2;
         }else {
-            vetorMetade = (vetor.length / 2) + 1;
+            meio = (vetor.length / 2) + 1;
         }
 
-        if (elemento == vetor[vetorMetade]) {
-            return true;
-        }
-
-        if (elemento < vetor[vetorMetade]){
-            for (int i = 0; i < vetorMetade; i++) {
-                if (vetor[i] == elemento) {
-                    return true;
+        for(int i = 0; i < vetor.length; i++) {
+            if (elemento < vetor[meio]){
+                fim = meio -1;
+                meio = meio / 2;
+                try {
+                    if (elemento == vetor[meio] || elemento != vetor[meio] && meio == 0) {
+                        return true;
+                    }
+                }catch(ArrayIndexOutOfBoundsException e){
+                    return false;
                 }
-            }
-        } else {
-            for (int i = vetorMetade; i < vetor.length; i++) {
-                if (vetor[i] == elemento) {
-                    return true;
+            } else {
+                meio += 1;
+                try {
+                    if (elemento == vetor[meio] || elemento != vetor[meio] && meio == fim) {
+                        return true;
+                    }
+                }catch(ArrayIndexOutOfBoundsException e){
+                    return false;
                 }
             }
         }
