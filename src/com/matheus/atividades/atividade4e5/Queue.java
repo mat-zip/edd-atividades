@@ -1,5 +1,7 @@
 package com.matheus.atividades.atividade4e5;
 
+import java.util.LinkedList;
+
 public class Queue {
     DoublyLink head;
     DoublyLink tail;
