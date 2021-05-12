@@ -11,12 +11,6 @@ public class Pilha {
         // Cria um nó e aloca ele na memória
         No aux = new No();
 
-        // Verifica se a pilha está vazia, se estiver não adiciona nada
-        if (aux == null) {
-            System.out.print("\nNão há elementos na pilha");
-            return;
-        }
-
         // initialize data into temp data field
         aux.data = elemento;
 
@@ -53,16 +47,15 @@ public class Pilha {
      * @return o elemento removido
      */
     public Integer pop() {
-
         //Verifica se há elementos na pilha
-        if (topo == null) {
+        if (estaVazia()) {
             System.out.println("Não há elementos na pilha");
             return -1;
         }
 
         No aux = topo;
         //Atualiza o topo da pilha para apontar para o próximo nó
-        topo = (topo).next;
+        topo = topo.next;
 
         return aux.data;
     }
