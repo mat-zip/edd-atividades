@@ -15,6 +15,4 @@ public class DoublyLink {
     public String toString() {
         return data.toString();
     }
-
-
 }

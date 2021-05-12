@@ -1,7 +1,5 @@
 package com.matheus.provas.prova1;
 
-import java.util.Stack;
-
 public class Ackerman {
 
     public int ackermanRecursiva(int m, int n) {
