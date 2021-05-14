@@ -11,7 +11,7 @@ public class Main {
         b.buscaSequencialOrdenada(vetor_ordenado, 1);
 
         int[] vetor_ordenado_binario = new int[]{10,11,12,13,14,15,16};
-        b.buscaBinaria(vetor_ordenado_binario, 9);
+        System.out.println(b.buscaBinaria(vetor_ordenado_binario, 10));
 
     }
 }
