@@ -1,14 +1,16 @@
 package com.matheus.provas.prova2;
 
-import java.sql.SQLOutput;
+import jdk.swing.interop.SwingInterOpUtils;
 
 public class Teste {
     public static void main(String[] args) {
 
         ClasseOrdenacao ordenacao = new ClasseOrdenacao();
+        ClasseBusca busca = new ClasseBusca();
         int[] vetorParaBubble = gerarVetor(10, 20);
         int[] vetorParaSelection = gerarVetor(10, 20);
         String[] vetorParaInsertion = {"Matheus", "Ana", "Julia", "Henrique", "Luiz", "Bruno"};
+        int[] vetorParaBuscaBinaria = {3,5,6,8,9,15,16,17, 19, 25};
 
         System.out.println("Vetor para BUBBLE SORT: " + imprime(vetorParaBubble));
         ordenacao.bubbleSortDecrescente(vetorParaBubble);
@@ -21,6 +23,9 @@ public class Teste {
         System.out.println("Vetor para INSERTION SORT(ordena Strings): " + imprime(vetorParaInsertion));
         ordenacao.insertionSortString(vetorParaInsertion);
         System.out.println("Vetor ordenado INSERTION SORT: " + imprime(vetorParaInsertion));
+        System.out.println("-----------------------------------------------------------------------\n");
+        System.out.println("Vetor para BUSCA BINÁRIA: " + imprime(vetorParaBuscaBinaria));
+        System.out.println(busca.buscaBinaria(vetorParaBuscaBinaria, 5));
     }
 
     /**

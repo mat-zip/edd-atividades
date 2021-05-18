@@ -33,7 +33,7 @@ public class Busca {
             meio = (fim + inicio) / 2;
 
             System.out.println("Início: " + vetor[inicio] + " - Meio: " + vetor[meio] + " - Fim: " + vetor[fim]);
-            System.out.println("Inicio: " + inicio + " - Meio: " + meio + " - Fim: " + fim);
+            System.out.println("Posiçao: " + inicio + " - Meio: " + meio + " - Fim: " + fim);
             if (vetor[meio] == elemento) {
                 return true;
             }
