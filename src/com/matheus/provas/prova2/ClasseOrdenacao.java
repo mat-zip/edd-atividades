@@ -28,15 +28,24 @@ public class ClasseOrdenacao {
     /**
      * Ordena um vetor com base no algoritmo de ordenação BUBBLE SORT de forma recursiva
      * @param vetor - vetor que irá ser ordenado
-     * @param n - número para o caso trivial
+     * @param tamanho - tamanho do vetor
      * @return ?????
      */
-    public int bubbleSortRecursivo(int[] vetor, int n) {
-        if (n <= 1) {
-            return 1;
+    public int[] bubbleSortRecursivo(int[] vetor, int tamanho) {
+        int i, j, aux;
+        i = tamanho;
+        //Caso trivial
+        if (i > 0) {
+            for (j = 0; j < tamanho - 1; j++) {
+                if (vetor[j] > vetor[j + 1]){
+                    aux = vetor[j];
+                    vetor[j] = vetor[j + 1];
+                    vetor[j + 1] = aux;
+                }
+            }
+            bubbleSortRecursivo(vetor, tamanho-1);
         }
-
-        return 0;
+        return vetor;
     }
 
     /**

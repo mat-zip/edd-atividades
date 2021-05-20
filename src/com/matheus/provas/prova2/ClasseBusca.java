@@ -1,6 +1,12 @@
 package com.matheus.provas.prova2;
 
 public class ClasseBusca {
+    /**
+     * Procura um elemento com base no algorítmo de Busca Binária
+     * @param vetor - Vetor ORDENADO no qual irá ser percorrido para encontrar o elemento
+     * @param elemento - elemento que irá ser procurado
+     * @return - true se o elemento está dentro da lista ou false se o elemento não está contido
+     */
 
     public boolean buscaBinaria(int[] vetor, int elemento) {
         int inicio = 0;
@@ -28,9 +34,6 @@ public class ClasseBusca {
         }
         return false;
     }
-
-
-
 
     /**
      * Método de busca binária recursiva tirado do vídeo: https://www.youtube.com/watch?v=EgLE5HwRy_M

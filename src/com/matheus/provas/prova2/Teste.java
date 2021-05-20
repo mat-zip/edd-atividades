@@ -8,6 +8,7 @@ public class Teste {
         ClasseOrdenacao ordenacao = new ClasseOrdenacao();
         ClasseBusca busca = new ClasseBusca();
         int[] vetorParaBubble = gerarVetor(10, 20);
+        int[] vetorParaBubbleRecusivo = gerarVetor(10, 20);
         int[] vetorParaSelection = gerarVetor(10, 20);
         String[] vetorParaInsertion = {"Matheus", "Ana", "Julia", "Henrique", "Luiz", "Bruno"};
         int[] vetorParaBuscaBinaria = {3,5,6,8,9,15,16,17, 19, 25};
@@ -15,6 +16,10 @@ public class Teste {
         System.out.println("Vetor para BUBBLE SORT: " + imprime(vetorParaBubble));
         ordenacao.bubbleSortDecrescente(vetorParaBubble);
         System.out.println("Vetor ordenado BUBBLE SORT(decrescente): " + imprime(vetorParaBubble));
+        System.out.println("-----------------------------------------------------------------------\n");
+        System.out.println("Vetor para BUBBLE RECURSIVO: " + imprime(vetorParaBubbleRecusivo));
+        ordenacao.bubbleSortRecursivo(vetorParaBubbleRecusivo, vetorParaBubbleRecusivo.length);
+        System.out.println("Vetor ordenado BUBBLE RECURSIVO(decrescente): " + imprime(vetorParaBubbleRecusivo));
         System.out.println("-----------------------------------------------------------------------\n");
         System.out.println("Vetor para SELECTION SORT: " + imprime(vetorParaSelection));
         ordenacao.selectionSortSeparado(vetorParaSelection);
